@@ -11,9 +11,7 @@ const PostList = (props) => {
                 {blogs.map((post) => (
                     <div className="post-preview" key={post.id}>
                         <p> {post.title}: {post.body} written by {post.author}</p>
-                        
                     </div>
-
                 ))}
             </div>
         </div>

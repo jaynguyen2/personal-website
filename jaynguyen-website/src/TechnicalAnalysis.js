@@ -2,7 +2,7 @@
 const TechnicalAnalysis = () => {
     return ( 
         <h2>
-            ABC
+            Technical Analysis:
         </h2>
 
      );
