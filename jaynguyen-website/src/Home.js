@@ -1,8 +1,10 @@
+import {useState} from 'react';
+
 const Home = () => {
     return ( 
         <div className="home">
             <h2>
-                homepage
+                Homepage
             </h2>
         </div>
      );
