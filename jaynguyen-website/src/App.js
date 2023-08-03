@@ -8,6 +8,7 @@ import PostDetails from './PostDetails';
 import TechnicalAnalysis from './TechnicalAnalysis';
 import PersonalProjects from './PersonalProjects';
 import Contacts from './Contacts';
+import PageNotFound from './PageNotFound';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -24,6 +25,8 @@ function App() {
             <Route path="/Blog" element={(<><Blog /></>)}/>
             <Route path="/Blog/:id" element={(<><PostDetails /></>)}/>
             <Route path="/TechnicalAnalysis" element={(<><TechnicalAnalysis /></>)}/>
+            <Route path="/TechnicalAnalysis/:id" element={(<><PostDetails /></>)}/>
+            <Route path="*" element={(<><PageNotFound/></>)}/>
           </Routes>
         </div>
       </div>

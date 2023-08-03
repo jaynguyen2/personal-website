@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react';
 import PostList from './PostsList';
 import useFetchData from './useFetchData';
+import SubscribeBlog from './SubscribeBlog';
 
 const Blog = () => {
 
@@ -33,8 +34,16 @@ const Blog = () => {
             {error && <div>{error}</div>}
             {pendingState && <div> Loading blogs...</div>}
             {blogs && <PostList allPosts={blogs}/> }
+            <SubscribeBlog />
 
         </div>
     );
 }
 export default Blog;
+
+/* 
+<Link to="/SubscribeBlog">Subscribe</Link> 
+
+
+
+*/
